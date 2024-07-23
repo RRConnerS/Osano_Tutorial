@@ -8,6 +8,10 @@ body {
     font-family: 'Source Serif 4', Arial, sans-serif !important;
 }
 
+body p {
+    color: blue;
+}
+
 h1 {
     color: #1597af;
     font-weight: bold;
