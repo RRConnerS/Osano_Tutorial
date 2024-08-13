@@ -20,6 +20,7 @@ body {
 @media only screen and (max-width: 600px) {
     body{
         color: red;
+        height: 100vh;
     }
 }
 
