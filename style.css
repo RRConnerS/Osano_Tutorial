@@ -17,6 +17,12 @@ body {
   word-wrap: break-word;
 }
 
+@media only screen and (max-width: 600px) {
+    body{
+        color: red;
+    }
+}
+
 a:link {
   color: blue;
   text-decoration: underline;
