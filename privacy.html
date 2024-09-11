@@ -4,6 +4,42 @@
 
 <body>
     <p>Privacy Policy</p>
-    <script type="text/javascript">   (function (w, d) { var l = w.addEventListener( "message", function (e) { try { var f = d.getElementById("osano-trusthub-page_1721055995947"); if (e.source === f.contentWindow && e.origin === "https://randallreillytalent.trusthub.com") { var m = JSON.parse(e.data); f.style.cssText = "height:" + m.osanoTrustHub.contentHeight + "px;min-width:100%"; w.removeEventListener(l); } } catch {} }, false ); d.write(''); })(window, document); </script>
-<!-- Osano TrustHub Embedded Page --> <script type="text/javascript"> (function (w, d) { var l = w.addEventListener( "message", function (e) { try { var f = d.getElementById("osano-trusthub-page_1726070018944"); if (e.source === f.contentWindow && e.origin === "https://randallreillytalent.trusthub.com") { var m = JSON.parse(e.data); f.style.cssText = "height:" + m.osanoTrustHub.contentHeight + "px;min-width:100%"; w.removeEventListener(l); } } catch {} }, false ); d.write(''); })(window, document); </script> <iframe frameborder="0" id="osano-trusthub-page_1726070018944" title="Osano TrustHub Embedded Page" src="https://randallreillytalent.trusthub.com/4f02c622-bebb-46bb-8268-e61e6d6b933e/" width="100%"></iframe>
-</body>
+
+    <!-- Osano TrustHub Embedded Page -->
+<script type="text/javascript">
+    (function (w, d) {
+        var l = w.addEventListener("message", function (e) {
+            try {
+                var f = d.getElementById("osano-trusthub-page_1726082400341");
+                
+                if (e.source === f.contentWindow && e.origin === "https://randallreillytalent.trusthub.com") {
+                    var m = JSON.parse(e.data);
+                    
+                    if (m.osanoTrustHub && m.osanoTrustHub.contentHeight) {
+                        var newHeight = m.osanoTrustHub.contentHeight;
+    
+                        if (newHeight < 1000) {
+                            newHeight = 1000;  // min-height
+                        }
+                        if (newHeight > 50000) {
+                            newHeight = 50000;  // max-height
+                        }
+    
+                        f.style.cssText = "height:" + newHeight + "px; min-width:100%";
+                    }
+                }
+            } catch (error) {
+                console.error("Error adjusting iframe height:", error);
+            }
+        }, false);
+    })(window, document);
+    </script>
+    
+    <iframe
+        frameborder="0"
+        id="osano-trusthub-page_1726082400341"
+        title="Osano TrustHub Embedded Page"
+        src="https://randallreillytalent.trusthub.com/4f02c622-bebb-46bb-8268-e61e6d6b933e/"
+        width="100%"
+        style="min-height: 1000px; max-height: 50000px; border: none;">
+    </iframe>
